@@ -1,0 +1,40 @@
+.app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+.btn {
+  background: #23b6bc;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  height: 35px;
+  min-width: 80px;
+  outline: none;
+}
+.btn:not(:last-child) {
+  margin-right: 15px;
+}
+.btn:hover {
+  background: #fff;
+  border: 1px solid #23b6bc;
+  color: #23b6bc;
+}
+.counter {
+  align-items: center;
+  background: #f3f5f9;
+  border: 1px solid #23b6bc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  width: 350px;
+}
+h1 {
+  margin: 0;
+}
