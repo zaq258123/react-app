@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background: #23b6bc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+header h2 {
+  margin: 10px;
+}
+.list-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-input-wrapper input {
+  flex-basis: 40%;
+  font-size: 16px;
+  height: 35px;
+}
+.list-input-wrapper button {
+  flex-basis: 15%;
+  height: 35px;
+}
+.content {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1140px;
+}
+.content > ul > li {
+  border-bottom: 1px solid gray;
+  margin-left: 24px;
+}
