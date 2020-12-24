@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import TemperatureInput from '../temperature-input/TemperatureInput'
-import BoilingDisplay from '../boiling-display/BoilingDisplay'
-import './Calculator.css'
+import TemperatureInput from '../TemperatureInput'
+import BoilingDisplay from '../BoilingDisplay'
+import './style.css'
 
 class Calculator extends Component {
   constructor(props) {
@@ -17,16 +17,16 @@ class Calculator extends Component {
       case 'c':
         return (value - 32) * (5 / 9)
       case 'f':
-        return value * 9 / 5 + 32
+        return (value * 9) / 5 + 32
       default:
         return value
     }
   }
   render() {
-    const scale = this.state.scale;
+    const scale = this.state.scale
     const temperature = this.state.temperature
     const celsius = scale === 'f' ? this.transform(temperature, 'c') : temperature
-    const fahrenheit = scale === 'c' ? this.transform(temperature, 'f') : temperature;
+    const fahrenheit = scale === 'c' ? this.transform(temperature, 'f') : temperature
     return (
       <div className="container">
         <h2>Calculator</h2>

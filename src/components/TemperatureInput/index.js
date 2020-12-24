@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import './TemperatureInput.css'
+import React, { Component } from 'react'
+import './style.css'
 
 const scaleNames = {
   c: 'Celsius',
-  f: 'Fahrenheit'
+  f: 'Fahrenheit',
 }
 class TemperatureInput extends Component {
   constructor(props) {
@@ -21,8 +21,8 @@ class TemperatureInput extends Component {
         <p>Scale: {scaleNames[scale]}</p>
         <input value={temperature} onChange={this.handleChange} />
       </fieldset>
-    );
+    )
   }
 }
 
-export default TemperatureInput;
+export default TemperatureInput
